@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Hey Hooney!</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Hooney</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#aboutus" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="#store" class="nav__link">Store</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+        <!-- Home -->
+        <main class="l-main">
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img"></div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hey,<br>Honey!</h1>
+                        <p class="home__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit lacus ut metus fringilla ornare. In vestibulum porttitor diam, vitae efficitur sapien suscipit ut. Nulla semper, erat vel rhoncus dapibus, nulla tellus sodales enim, sit amet porttitor purus eros nec sem. Vivamus id dolor neque. Aliquam tincidunt risus eget pellentesque aliquam. Sed nec aliquam lectus. Nunc consequat rhoncus euismod.</p>
+                        <a href="#" class="button">Show More</a>
+                    </div>   
+                </div>
+            </section>
+        </main>
+        <!-- About Us -->
+        <section class="aboutus section bd-container" id="aboutus">
+            <div class="aboutus__container bd-grid">
+                <div class="aboutus__img">
+                    <img src="assets/img/our_mission.png" alt="Our Mission">
+                </div>
+                <div class="aboutus__data">
+                    <h2 class="aboutus__title">Our Mission</h2>
+                    <p class="aboutus__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit lacus ut metus fringilla ornare. In vestibulum porttitor diam, vitae efficitur sapien suscipit ut. Nulla semper, erat vel rhoncus dapibus, nulla tellus sodales enim, sit amet porttitor purus eros nec sem. Vivamus id dolor neque. Aliquam tincidunt risus eget pellentesque aliquam. Sed nec aliquam lectus. Nunc consequat rhoncus euismod.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Store -->
+        <section class="store section bd-container" id="store">
+            <div class="store__header">
+                <h2 class="store__title">Honey</h2>
+                <p class="store__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit lacus ut metus fringilla ornare. In vestibulum porttitor diam, vitae efficitur sapien suscipit ut. Nulla semper, erat vel rhoncus dapibus, nulla tellus sodales enim, sit amet porttitor purus eros nec sem. Vivamus id dolor neque. Aliquam tincidunt risus eget pellentesque aliquam. Sed nec aliquam lectus. Nunc consequat rhoncus euismod.</p>
+            </div>
+            <div class="store__container bd-grid">
+                <form class="product__types" id="product__types">
+                    <h3 class="types__title">Filtrowanie:</h3>
+                    <label for="wielokwiatowy" class="radio__button">
+                        <input type="checkbox"
+                           id="wielokwiatowy"
+                           name="wielokwiatowy"
+                           value="wielokwiatowy" >
+                           <p>Wielokwiatowy</p></label>
+                    <label for="lipowy" class="radio__button">
+                        <input type="checkbox"
+                           id="lipowy"
+                           name="lipowy"
+                           value="lipowy">
+                           <p>Lipowy</p></label>
+                    <label for="spadziowy" class="radio__button">
+                        <input type="checkbox"
+                           id="spadziowy"
+                           name="spadziowy"
+                           value="spadziowy">
+                           <p>Spadziowy</p></label>
+                </form>
+                <div class="store__content bd-grid">
+                    <div class="store__data wielokwiatowy" data-value="wielokwiatowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">Wielokwiatowy z maliną</h3>
+                        <p class="product__description">1000ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+
+                    <div class="store__data wielokwiatowy" data-value="wielokwiatowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">Wielokwiatowy</h3>
+                        <p class="product__description">350ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+
+                    <div class="store__data wielokwiatowy" data-value="wielokwiatowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">Wielokwiatowy z Rózą</h3>
+                        <p class="product__description">350ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+
+                    <div class="store__data lipowy" data-value="lipowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">lipowy z maliną</h3>
+                        <p class="product__description">1000ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+
+                    <div class="store__data lipowy" data-value="lipowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">lipowy</h3>
+                        <p class="product__description">350ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+
+                    <div class="store__data lipowy" data-value="lipowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">lipowy z Rózą</h3>
+                        <p class="product__description">350ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+
+                    <div class="store__data spadziowy" data-value="spadziowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">spadziowy z maliną</h3>
+                        <p class="product__description">1000ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+
+                    <div class="store__data spadziowy" data-value="spadziowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">spadziowy</h3>
+                        <p class="product__description">350ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+
+                    <div class="store__data spadziowy" data-value="spadziowy">
+                        <img src="assets/img/product_1.png" alt="" class="store__img">
+                        <h3 class="product__title">spadziowy z Rózą</h3>
+                        <p class="product__description">350ML</p>
+                        <a href="#" class="button button-link">Buy Now</a>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <!-- Banner -->
+        <section class="banner-container">
+            <img class="big__jar" src="assets/img/big_jar.png">
+        </section>
+        <!-- Contact Us -->
+        <section class="contactus section bd-container" id="contactus">
+            <div class="contactus__container bd-grid">
+                <div class="contactus__data">
+                    <form class="contactus__form">
+                        <h2 class="costactus__title">Write to us!</h2>
+                        <input>
+                        <input>
+                        <input>
+                        <button class="button">Send Message</button>
+                    </form>
+                </div>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13989.646579878343!2d21.011663342234137!3d52.18702022297577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471932cd23da230f%3A0xe1648cb0aae2d14!2sLudwika%20Idzikowskiego%2021%2C%2002-704%20Warszawa!5e0!3m2!1spl!2spl!4v1622208342821!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
