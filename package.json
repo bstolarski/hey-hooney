@@ -1,0 +1,20 @@
+{
+  "name": "hey-honey",
+  "version": "1.0.0",
+  "description": "miodek",
+  "main": "main.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bstolarski/hey-hooney.git"
+  },
+  "author": "b.stolarski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bstolarski/hey-hooney/issues"
+  },
+  "homepage": "https://github.com/bstolarski/hey-hooney#readme"
+}
