@@ -45,21 +45,21 @@
         {
             "name": "Spadziowy z Maliną",
             "id": "1007",
-            "type":"lipowy",
+            "type":"spadziowy",
             "size":"350L",
             "image":"product_1.png"
         },
         {
             "name": "Spadziowy",
             "id": "1008",
-            "type":"lipowy",
+            "type":"spadziowy",
             "size":"1000L",
             "image":"product_1.png"
         },
         {
             "name": "Spadziowy z Rózą",
             "id": "1009",
-            "type":"lipowy",
+            "type":"spadziowy",
             "size":"350L",
             "image":"product_1.png"
         }

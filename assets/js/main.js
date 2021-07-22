@@ -45,25 +45,27 @@ class Product {
 }
 // RENDERING PRODUCTS LIST
 const storeContent = document.querySelector('.store__content');
-console.log(storeContent);
 
 ProductsRestApiService.getProducts(
   products => products.map(function(product){
     const productTemplate = document.createElement("div");
+    productTemplate.classList.add("store__data");
+    productTemplate.classList.add(product.type);
+    productTemplate.setAttribute("id", product.id);
+    productTemplate.setAttribute("value", product.type);
     productTemplate.innerHTML = 
-    `<div class="store__data ${product.type}" id="${product.id}" data-value="${product.type}">
+      `
         <img src="assets/img/${product.image}" alt="${product.name}" class="store__img">
         <h3 class="product__title">${product.name}</h3>
         <p class="product__description">${product.size}</p>
         <a href="#" class="button button-link">Buy Now</a>
-    </div>`;
+      `;
     storeContent.appendChild(productTemplate);
   })
 );
 
 // STORE FILTER
 const allCheckboxes = document.querySelectorAll('input[type=checkbox]');
-const allProducts = Array.from(document.querySelectorAll('.store__data'));
 
 Array.prototype.forEach.call(allCheckboxes, function (el) {
     el.addEventListener('change', toggleCheckbox);
@@ -75,6 +77,7 @@ function toggleCheckbox(e) {
 }  
 
 function setVisibility(e) {
+  const allProducts = Array.from(document.querySelectorAll('.store__data'));
     allProducts.map(function (el) {
       if (e.target.classList.contains('checked') && el.classList.contains(e.target.value)) {
         el.style.display = 'block';
