@@ -289,7 +289,7 @@ font-size: 10px;
   z-index:100;
 }
 
-.radio__button input:checked::after {
+.radio__button input.checked::after {
   content: url(../img/poly_icon.png);
 }
 

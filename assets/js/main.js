@@ -67,8 +67,12 @@ ProductsRestApiService.getProducts(
 // STORE FILTER
 const allCheckboxes = document.querySelectorAll('input[type=checkbox]');
 
-Array.prototype.forEach.call(allCheckboxes, function (el) {
+Array.prototype.forEach.call(allCheckboxes, function (el, index) {
+  setVisibility(el);
     el.addEventListener('change', toggleCheckbox);
+    if (index == 0){
+      el.classList.add('checked');
+    }
   });
 
 function toggleCheckbox(e) {
