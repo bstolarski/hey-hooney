@@ -1,20 +1,67 @@
-// function loadJSON(callback) {   
+// LOAD DATA FROM JSON
+class ProductsRestApiService {
+  static restApiUrl = 'https://my-json-server.typicode.com/bstolarski/hey-hooney';
 
-//   const xobj = new XMLHttpRequest();
-//       xobj.overrideMimeType("application/json");
-//   xobj.open('GET', './data.json', true); // Replace 'my_data' with the path to your file
-//   xobj.onreadystatechange = function () {
-//         if (xobj.readyState == 4 && xobj.status == "200") {
-//           // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-//           callback(JSON.parse(xobj.responseText));
-//         }
-//   };
-//   xobj.send(null);  
-// }
-// console.log(loadJSON());
+  static getProducts(callback, errCallback) {
+      fetch(`${this.restApiUrl}/products`)
+          .then(resp => {
+              if (resp.ok) {
+                  return resp.json()
+              } else {
+                  throw new Error('Connection error');
+              }
+          })
+          .then(products => {
+              const data = products.map(product =>
+                  new Product(
+                      product.name,
+                      product.id,
+                      product.type,
+                      product.size,
+                      product.image
+                  )
+              );
+              if (typeof callback === 'function') {
+                  callback(data);
+              }
+          })
+          .catch(err => {
+              if (typeof errCallback === 'function') {
+                  errCallback(err);
+              }
+          })
+  }
+}
 
-// store filter
+// PRODUCT MODEL
+class Product {
+  constructor(name, id, type, size, image) {
+      this.name = name;
+      this.id = id;
+      this.type = type;
+      this.size = size;
+      this.image = image;
+  }
+}
+// RENDERING PRODUCTS LIST
+const storeContent = document.querySelector('.store__content');
+console.log(storeContent);
 
+ProductsRestApiService.getProducts(
+  products => products.map(function(product){
+    const productTemplate = document.createElement("div");
+    productTemplate.innerHTML = 
+    `<div class="store__data ${product.type}" id="${product.id}" data-value="${product.type}">
+        <img src="assets/img/${product.image}" alt="${product.name}" class="store__img">
+        <h3 class="product__title">${product.name}</h3>
+        <p class="product__description">${product.size}</p>
+        <a href="#" class="button button-link">Buy Now</a>
+    </div>`;
+    storeContent.appendChild(productTemplate);
+  })
+);
+
+// STORE FILTER
 const allCheckboxes = document.querySelectorAll('input[type=checkbox]');
 const allProducts = Array.from(document.querySelectorAll('.store__data'));
 
@@ -31,7 +78,7 @@ function setVisibility(e) {
     allProducts.map(function (el) {
       if (e.target.classList.contains('checked') && el.classList.contains(e.target.value)) {
         el.style.display = 'block';
-      } else {
+      } else if(!e.target.classList.contains('checked') && el.classList.contains(e.target.value)) {
         el.style.display = 'none';
       }
     });

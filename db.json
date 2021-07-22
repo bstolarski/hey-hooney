@@ -5,63 +5,63 @@
             "id": "1001",
             "type":"wielokwiatowy",
             "size":"1000L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         },
         {
             "name": "Wielokwiatowy z Rózą",
             "id": "1002",
             "type":"wielokwiatowy",
             "size":"350L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         },
         {
             "name": "Wielokwiatowy z maliną",
             "id": "1003",
             "type":"wielokwiatowy",
             "size":"350L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         },
         {
             "name": "Lipowy z Maliną",
             "id": "1004",
             "type":"lipowy",
             "size":"350L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         },
         {
             "name": "lipowy z Rózą",
             "id": "1005",
             "type":"lipowy",
             "size":"350L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         },
         {
             "name": "Lipowy",
             "id": "1006",
             "type":"lipowy",
             "size":"1000L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         },
         {
             "name": "Spadziowy z Maliną",
             "id": "1007",
             "type":"lipowy",
             "size":"350L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         },
         {
             "name": "Spadziowy",
             "id": "1008",
             "type":"lipowy",
             "size":"1000L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         },
         {
             "name": "Spadziowy z Rózą",
             "id": "1009",
             "type":"lipowy",
             "size":"350L",
-            "image":"assets/img/product_1.png"
+            "image":"product_1.png"
         }
     ]
 }
