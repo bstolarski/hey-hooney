@@ -4,7 +4,7 @@
 /* VARIABLES */
 :root {
 font-size: 10px;
---header-height: 3rem;
+--header-height: 5rem;
 
 /* Colors */
 --first-color: #f7a803;
@@ -59,8 +59,10 @@ font-size: 10px;
     width: 100%;
     top: 0;
     left: 0;
+    position: fixed;
     z-index: var(--z-fixed);
     background-color: white;
+    border-bottom: 2px solid #d1cdd2;
   }
 
   .section {
@@ -74,6 +76,19 @@ font-size: 10px;
     justify-content: space-between;
     align-items: center;
   }
+
+.nav__logo{
+  font-family: var(--headline-font);
+  font-size: var(--normal-font-size);
+  text-decoration: none;
+}
+
+.nav__logo::before{
+  content: url(../img/bee_logo.png);
+  position: relative;
+  top: 7px;
+  left: -7px;
+}
 
   @media screen and (max-width: 768px){
     .nav__menu{
@@ -95,9 +110,15 @@ font-size: 10px;
   .nav__item{
     margin-bottom: var(--mb-3);
   }
-  
+  .nav__list{
+    list-style-type: none;
+  }
+
   .nav__link, .nav__logo, .nav__toggle{
+    font-family: var(--text-font);
+    font-size: var(--normal-font-size);
     color: var(--text-color);
+    text-decoration: none;
   }
   
   .nav__logo:hover{
