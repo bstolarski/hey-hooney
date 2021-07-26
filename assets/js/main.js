@@ -95,9 +95,22 @@ function setVisibility(e) {
 // Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
   const navIcon = document.querySelector('.nav__toggle');
   const navList = document.querySelector('.nav__list');
-  navIcon.addEventListener(onclick, function() {
-    navList.classList.toggle('visible');
-  })
+
+  navIcon.addEventListener("click", mobileMenu);
+
+  function mobileMenu() {
+    navIcon.classList.toggle("active");
+    navList.classList.toggle("active");
+  }
+
+  const navLink = document.querySelectorAll('.nav__link');
+
+  navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+  function closeMenu() {
+    navIcon.classList.remove("active");
+    navList.classList.remove("active");
+  }
 
 // SCROLL REVEAL
 

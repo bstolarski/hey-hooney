@@ -81,6 +81,7 @@ font-size: 10px;
   font-family: var(--headline-font);
   font-size: var(--normal-font-size);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav__logo::before{
@@ -91,20 +92,21 @@ font-size: 10px;
 }
 
   @media screen and (max-width: 768px){
-    .nav__menu{
+    .nav__list{
       position: fixed;
-      top: -100%;
-      left: 0;
-      right: 0;
-      width: 90%;
-      margin: 0 auto;
-      padding: 2.5rem 0 0;
+      top: 4rem;
+      left: -100%;
+      width: 100%;
       text-align: center;
       background-color: white;
-      transition: .4s;
-      box-shadow: 0 0 4px rgba(0,0,0,.1);
-      border-radius: 2rem;
+      transition: .5s;
+      box-shadow: 0 10px 27px rgba(0,0,0, 0.05);
+      border-radius: 1rem;
       z-index: var(--z-fixed);
+    }
+
+    .nav__list.active {
+      left: 0;
     }
   }
   .nav__item{
@@ -307,7 +309,7 @@ font-size: 10px;
   position:relative;
   bottom: 14px;
   left:24px;
-  z-index:100;
+  z-index:1;
 }
 
 .radio__button input.checked::after {
@@ -533,7 +535,7 @@ font-size: 10px;
     }
 
     .store__content{
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     }
 
     .home__img{
