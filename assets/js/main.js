@@ -90,3 +90,33 @@ function setVisibility(e) {
       }
     });
   }
+
+// MOBILE NAVIGATION
+// Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon
+  const navIcon = document.querySelector('.nav__toggle');
+  const navList = document.querySelector('.nav__list');
+  navIcon.addEventListener(onclick, function() {
+    navList.classList.toggle('visible');
+  })
+
+// SCROLL REVEAL
+
+// const reveal = ScrollReveal({
+//   duration: 1000,
+//   reset: true
+// });
+
+// const nodeArray = [
+//   document.querySelector('.home__data'),
+//   document.querySelector('.aboutus__data'),
+//   document.querySelector('.store__header')
+// ];
+
+// reveal.reveal(nodeArray, {
+// });
+// reveal.reveal('.button', {
+//   delay: 500
+// });
+// reveal.reveal('.store__data', {
+//   delay: 1000
+// },1000);
