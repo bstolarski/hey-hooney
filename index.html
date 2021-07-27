@@ -62,23 +62,29 @@
                 <form class="product__types" id="product__types">
                     <h3 class="types__title">Filtrowanie:</h3>
                     <label for="wielokwiatowy" class="radio__button">
-                        <input type="checkbox"
+                        <input 
+                           type="checkbox"
                            id="wielokwiatowy"
                            name="wielokwiatowy"
                            value="wielokwiatowy" >
-                           <p>Wielokwiatowy</p></label>
+                           <p>Wielokwiatowy</p>
+                    </label>
                     <label for="lipowy" class="radio__button">
-                        <input type="checkbox"
+                        <input 
+                           type="checkbox"
                            id="lipowy"
                            name="lipowy"
                            value="lipowy">
-                           <p>Lipowy</p></label>
+                           <p>Lipowy</p>
+                    </label>
                     <label for="spadziowy" class="radio__button">
-                        <input type="checkbox"
+                        <input 
+                           type="checkbox"
                            id="spadziowy"
                            name="spadziowy"
                            value="spadziowy">
-                           <p>Spadziowy</p></label>
+                           <p>Spadziowy</p>
+                    </label>
                 </form>
                 <div class="store__content bd-grid">
 
@@ -92,14 +98,23 @@
             <img class="big__jar" src="assets/img/big_jar.png">
         </section>
         <!-- Contact Us -->
-        <section class="contactus section bd-container" id="contact">
-            <div class="contactus__container bd-grid">
-                <div class="contactus__data">
-                    <form class="contactus__form">
-                        <h2 class="contactus__title">Write to Us!</h2>
-                        <input>
-                        <input>
-                        <input>
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <form class="contact__form">
+                        <h2 class="contact__title">Write to Us!</h2>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            placeholder="NAME AND SURNAME">
+                        <input 
+                            type="text" 
+                            name="email" 
+                            placeholder="E-MAIL">
+                        <textarea 
+                            type="text" 
+                            name="message" 
+                            placeholder="MESSAGE">
                         <button class="button">Send Message</button>
                     </form>
                 </div>

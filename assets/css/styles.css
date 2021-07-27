@@ -355,13 +355,13 @@ font-size: 10px;
 
 /* CONTACT US */
 
-.contactus__container{
+.contact__container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contactus__title{
+.contact__title{
   font-family: var(--headline-font);
   font-size: var(--h2-font-size);
   line-height: 3.8rem;
@@ -370,7 +370,7 @@ font-size: 10px;
   position: relative;
 }
 
-.contactus__title::before{
+.contact__title::before{
   content: "W";
   font-size: 15rem;
   opacity: 10%;
@@ -379,8 +379,14 @@ font-size: 10px;
   left: -7rem;
 }
 
-.contactus__data{
+.contact__data{
   padding-left: 7rem;
+}
+
+.contact__form{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
 }
 
 /* MAP */
@@ -524,7 +530,7 @@ font-size: 10px;
       grid-template-columns: 1fr 2fr;
     }
 
-    .contactus__container{
+    .contact__container{
       grid-template-columns: 1fr 1fr;
       column-gap: 0;
     }
@@ -570,13 +576,8 @@ font-size: 10px;
       height: auto;
     }
 
-    .contactus__container{
+    .contact__container{
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
-    .contactus__form {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
 }
