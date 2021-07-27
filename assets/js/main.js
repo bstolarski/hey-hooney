@@ -61,31 +61,30 @@ ProductsRestApiService.getProducts(
         <a href="#" class="button button-link">Buy Now</a>
       `;
     storeContent.appendChild(productTemplate);
+    // Store Filter and set defualt visibility on loaded products
+    const allCheckboxes = document.querySelectorAll('input[type=checkbox]');
+    Array.prototype.forEach.call(allCheckboxes, function (el, index) {
+      el.addEventListener('change', toggleCheckbox);
+      if (index == 0){
+        el.classList.add('checked');
+      }
+      setVisibility(el);
+    });
   })
 );
 
-// STORE FILTER
-const allCheckboxes = document.querySelectorAll('input[type=checkbox]');
-
-Array.prototype.forEach.call(allCheckboxes, function (el, index) {
-  setVisibility(el);
-    el.addEventListener('change', toggleCheckbox);
-    if (index == 0){
-      el.classList.add('checked');
-    }
-  });
-
+// CHECKBOX FILTER
 function toggleCheckbox(e) {
     e.target.classList.toggle('checked');
-    setVisibility(e);
+    setVisibility(e.target);
 }  
 
 function setVisibility(e) {
   const allProducts = Array.from(document.querySelectorAll('.store__data'));
     allProducts.map(function (el) {
-      if (e.target.classList.contains('checked') && el.classList.contains(e.target.value)) {
+      if (e.classList.contains('checked') && el.classList.contains(e.value)) {
         el.style.display = 'block';
-      } else if(!e.target.classList.contains('checked') && el.classList.contains(e.target.value)) {
+      } else if(!e.classList.contains('checked') && el.classList.contains(e.value)) {
         el.style.display = 'none';
       }
     });
