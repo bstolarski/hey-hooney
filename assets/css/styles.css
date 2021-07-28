@@ -170,18 +170,22 @@ font-size: 10px;
     display: none;
   }
 
+  .home__data{
+    margin-top: var(--mb-5);
+  }
+
   .home__title{
     font-family: var(--headline-font);
     font-size: var(--h2-font-size);
-    line-height: 153px;
-    letter-spacing: 1.3rem;
     position: relative;
+    margin: 0;
+    line-height: 7rem;
   }
 
   .home__title::before {
     content: url(../img/bee.png);
     position: absolute;
-    left: 42rem;
+    left: 18rem;
     top: -4rem;
   }
   
@@ -619,6 +623,12 @@ textarea:hover{
 
     .home__title{
       font-size: var(--h1-font-size);
+      line-height: 153px;
+      letter-spacing: 1.3rem;
+    }
+
+    .home__title::before{
+      left: 42rem;
     }
 
     .home__img{
