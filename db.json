@@ -5,63 +5,72 @@
             "id": "1001",
             "type":"wielokwiatowy",
             "size":"1000L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         },
         {
             "name": "Wielokwiatowy z Rózą",
             "id": "1002",
             "type":"wielokwiatowy",
             "size":"350L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         },
         {
             "name": "Wielokwiatowy z maliną",
             "id": "1003",
             "type":"wielokwiatowy",
             "size":"350L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         },
         {
             "name": "Lipowy z Maliną",
             "id": "1004",
             "type":"lipowy",
             "size":"350L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         },
         {
             "name": "lipowy z Rózą",
             "id": "1005",
             "type":"lipowy",
             "size":"350L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         },
         {
             "name": "Lipowy",
             "id": "1006",
             "type":"lipowy",
             "size":"1000L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         },
         {
             "name": "Spadziowy z Maliną",
             "id": "1007",
             "type":"spadziowy",
             "size":"350L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         },
         {
             "name": "Spadziowy",
             "id": "1008",
             "type":"spadziowy",
             "size":"1000L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         },
         {
             "name": "Spadziowy z Rózą",
             "id": "1009",
             "type":"spadziowy",
             "size":"350L",
-            "image":"product_1.png"
+            "image":"product_1.png",
+            "new": "new"
         }
     ]
 }
