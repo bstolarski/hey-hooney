@@ -18,7 +18,8 @@ class ProductsRestApiService {
                       product.id,
                       product.type,
                       product.size,
-                      product.image
+                      product.image,
+                      product.newProduct,
                   )
               );
               if (typeof callback === 'function') {
@@ -35,12 +36,13 @@ class ProductsRestApiService {
 
 // PRODUCT MODEL
 class Product {
-  constructor(name, id, type, size, image) {
+  constructor(name, id, type, size, image, newProduct) {
       this.name = name;
       this.id = id;
       this.type = type;
       this.size = size;
       this.image = image;
+      this.newProduct = newProduct;
   }
 }
 // RENDERING PRODUCTS LIST
