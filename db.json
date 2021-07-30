@@ -14,7 +14,7 @@
             "type":"wielokwiatowy",
             "size":"350L",
             "image":"product_1.png",
-            "newProduct": "new"
+            "newProduct": ""
         },
         {
             "name": "Wielokwiatowy z maliną",
@@ -22,7 +22,7 @@
             "type":"wielokwiatowy",
             "size":"350L",
             "image":"product_1.png",
-            "newProduct": "new"
+            "newProduct": ""
         },
         {
             "name": "Lipowy z Maliną",
@@ -30,7 +30,7 @@
             "type":"lipowy",
             "size":"350L",
             "image":"product_1.png",
-            "newProduct": "new"
+            "newProduct": ""
         },
         {
             "name": "lipowy z Rózą",
@@ -38,7 +38,7 @@
             "type":"lipowy",
             "size":"350L",
             "image":"product_1.png",
-            "newProduct": "new"
+            "newProduct": ""
         },
         {
             "name": "Lipowy",
@@ -46,7 +46,7 @@
             "type":"lipowy",
             "size":"1000L",
             "image":"product_1.png",
-            "newProduct": "new"
+            "newProduct": ""
         },
         {
             "name": "Spadziowy z Maliną",
@@ -54,7 +54,7 @@
             "type":"spadziowy",
             "size":"350L",
             "image":"product_1.png",
-            "newProduct": "new"
+            "newProduct": ""
         },
         {
             "name": "Spadziowy",
@@ -62,7 +62,7 @@
             "type":"spadziowy",
             "size":"1000L",
             "image":"product_1.png",
-            "newProduct": "new"
+            "newProduct": ""
         },
         {
             "name": "Spadziowy z Rózą",
@@ -70,7 +70,7 @@
             "type":"spadziowy",
             "size":"350L",
             "image":"product_1.png",
-            "newProduct": "new"
+            "newProduct": ""
         }
     ]
 }

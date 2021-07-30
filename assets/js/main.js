@@ -57,7 +57,7 @@ ProductsRestApiService.getProducts(
     productTemplate.setAttribute("value", product.type);
     productTemplate.innerHTML = 
       `
-        <img src="assets/img/${product.image}" alt="${product.name}" class="store__img">
+        <img src="assets/img/${product.image}" alt="${product.name}" class="store__img ${product.newProduct}">
         <h3 class="product__title">${product.name}</h3>
         <p class="product__description">${product.size}</p>
         <a href="#" class="button button-link">Buy Now</a>
@@ -115,25 +115,40 @@ function setVisibility(e) {
 
 // SCROLL REVEAL
 
-// const reveal = ScrollReveal({
-//   duration: 1000,
-//   reset: true
-// });
+const reveal = ScrollReveal({
+  duration: 2000,
+  delay: 200,
+  reset: true
+});
 
-// const nodeArray = [
-//   document.querySelector('.home__data'),
-//   document.querySelector('.aboutus__data'),
-//   document.querySelector('.store__header')
-// ];
+const scale = ScrollReveal({
+  duration: 1500,
+  delay: 200,
+  scale: 0.85,
+  reset: true
+})
 
-// reveal.reveal(nodeArray, {
-// });
-// reveal.reveal('.button', {
-//   delay: 500
-// });
-// reveal.reveal('.store__data', {
-//   delay: 1000
-// },1000);
+const ContentArray = [
+  document.querySelector('.home__data'),
+  document.querySelector('.aboutus__data'),
+  document.querySelector('.store__header'),
+];
+
+const ImageArray = [
+  document.querySelector('.home__title::before'),
+  document.querySelector('.home__img'),
+  document.querySelector('.aboutus__img')
+]
+
+reveal.reveal(ContentArray, {
+});
+reveal.reveal('.button', {
+  delay: 500
+});
+
+scale.reveal(ImageArray, {
+});
+
 
 // FORM VALIDATION
 const form = document.querySelector("form[name='contact-form']");

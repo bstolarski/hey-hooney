@@ -18,6 +18,7 @@ font-size: 10px;
 --h1-font-size: 9.3rem;
 --h2-font-size: 4rem;
 --normal-font-size: 2rem;
+--copyright-font-size: 1.6rem;
 
 /* Margenes */
 --mb-1: .5rem;
@@ -171,7 +172,13 @@ font-size: 10px;
   }
 
   .home__data{
+    display: flex;
+    flex-direction: column;
     margin-top: var(--mb-5);
+  }
+
+  .home__data a {
+    align-self: center;
   }
 
   .home__title{
@@ -331,10 +338,6 @@ font-size: 10px;
 
 .store__data:hover{
   box-shadow: 0 3px 18px rgba(65,11,16,.15);
-}
-
-.store__img{
-  width: 270px;
 }
 
 .product__title{
@@ -505,6 +508,11 @@ textarea:hover{
   align-items: center;
 }
 
+.copyright__info{
+  font-family: var(--text-font);
+  font-size: var(--copyright-font-size);
+}
+
 /* BUTTONS */
 .button{
     font-family: var(--text-font);
@@ -628,6 +636,10 @@ textarea:hover{
       margin-top: var(--mb-7);
     }
 
+    .home__data a {
+      align-self: flex-start;
+    }
+
     .home__title{
       font-size: var(--h1-font-size);
       line-height: 153px;
@@ -649,11 +661,11 @@ textarea:hover{
     .aboutus__title,
     .store__title,
     .contact__title{
-      text-align: none;
+      text-align: left;
     }
 
     .aboutus__title::before,
-    .store__title,::before,
+    .store__title::before,
     .contact__title::before{
       left: -8rem;
     }
